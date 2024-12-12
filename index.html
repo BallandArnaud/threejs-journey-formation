@@ -3,43 +3,44 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Three.js Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <ul>
-            <li>
-                <a href="./32-coffee-smoke-shader/dist/index.html"
-                    >Coffee Smoke</a
-                >
-            </li>
-            <li>
-                <a href="./33-hologram-shader/src/index.html"
-                    >Hologram shader</a
-                >
-            </li>
-            <li>
-                <a href="./34-fireworks-shaders/src/index.html"
-                    >Fireworks shader</a
-                >
-            </li>
-            <li>
-                <a href="./35-lights-shading-shaders/src/index.html"
-                    >Lights shading</a
-                >
-            </li>
-            <li>
-                <a href="./36-raging-sea-shading-shaders/src/index.html"
-                    >Raging sea</a
-                >
-            </li>
-            <li>
-                <a href="./37-halftone-shading-shaders/src/index.html"
-                    >Halftone shading</a
-                >
-            </li>
-            <li>
-                <a href="./38-earth-shaders/src/index.html">Earth shader</a>
-            </li>
-        </ul>
+        <h1>My Three.js Projects</h1>
+        <div id="portfolio" class="gallery"></div>
+
+        <script>
+            async function loadProjects() {
+                // Chargement des projets automatiquement
+                const response = await fetch("projects.json");
+                const projects = await response.json();
+
+                const portfolio = document.getElementById("portfolio");
+
+                projects.forEach((project) => {
+                    const projectDiv = document.createElement("div");
+                    projectDiv.className = "project";
+
+                    // Image du projet
+                    const img = document.createElement("img");
+                    img.src = project.image;
+                    img.alt = project.name;
+
+                    // Lien vers le projet live
+                    const link = document.createElement("a");
+                    link.href = `demo/${project.name}`;
+                    link.target = "_blank";
+                    link.textContent = "Voir le projet";
+
+                    // Assemblage
+                    projectDiv.appendChild(img);
+                    projectDiv.appendChild(link);
+                    portfolio.appendChild(projectDiv);
+                });
+            }
+
+            loadProjects();
+        </script>
     </body>
 </html>
