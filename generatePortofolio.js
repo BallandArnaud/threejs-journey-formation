@@ -9,7 +9,7 @@ const projects = fs
     .filter((file) => fs.statSync(path.join(demoDir, file)).isDirectory())
     .map((project) => ({
         name: project,
-        image: `assets/${project}.png`,
+        image: `assets/${project}.jpg`,
     }));
 
 fs.writeFileSync(
