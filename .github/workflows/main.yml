@@ -1,4 +1,4 @@
-name: Deploy to Vercel
+name: Build and Deploy to Vercel
 
 on:
   push:
@@ -13,8 +13,20 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Install Vercel CLI
+    - name: Install dependencies globally
       run: npm install -g vercel
+
+    - name: Build all projects
+      run: |
+        for dir in demo/*; do
+          if [ -d "$dir" ]; then
+            echo "Building $dir"
+            cd $dir
+            npm install
+            npm run build
+            cd ../../
+          fi
+        done
 
     - name: Deploy to Vercel
       env:
