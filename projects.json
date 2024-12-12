@@ -1,30 +1,30 @@
 [
-    {
-        "name": "32-coffee-smoke-shader",
-        "image": "assets/32-coffee-smoke-shader.png"
-    },
-    {
-        "name": "33-hologram-shader",
-        "image": "assets/33-hologram-shader.png"
-    },
-    {
-        "name": "34-fireworks-shaders",
-        "image": "assets/34-fireworks-shaders.png"
-    },
-    {
-        "name": "35-lights-shading-shaders",
-        "image": "assets/35-lights-shading-shaders.png"
-    },
-    {
-        "name": "36-raging-sea-shading-shaders",
-        "image": "assets/36-raging-sea-shading-shaders.png"
-    },
-    {
-        "name": "37-halftone-shading-shaders",
-        "image": "assets/37-halftone-shading-shaders.png"
-    },
-    {
-        "name": "38-earth-shaders",
-        "image": "assets/38-earth-shaders.png"
-    }
+  {
+    "name": "32-coffee-smoke-shader",
+    "image": "assets/32-coffee-smoke-shader.jpg"
+  },
+  {
+    "name": "33-hologram-shader",
+    "image": "assets/33-hologram-shader.jpg"
+  },
+  {
+    "name": "34-fireworks-shaders",
+    "image": "assets/34-fireworks-shaders.jpg"
+  },
+  {
+    "name": "35-lights-shading-shaders",
+    "image": "assets/35-lights-shading-shaders.jpg"
+  },
+  {
+    "name": "36-raging-sea-shading-shaders",
+    "image": "assets/36-raging-sea-shading-shaders.jpg"
+  },
+  {
+    "name": "37-halftone-shading-shaders",
+    "image": "assets/37-halftone-shading-shaders.jpg"
+  },
+  {
+    "name": "38-earth-shaders",
+    "image": "assets/38-earth-shaders.jpg"
+  }
 ]
