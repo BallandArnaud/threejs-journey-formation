@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/demo/:project*",
+            "destination": "/demo/:project*/dist/index.html"
+        }
+    ]
+}
