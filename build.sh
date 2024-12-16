@@ -1,11 +1,15 @@
 #!/bin/bash
 
-set -e # Arrête le script en cas d'erreur
+#set -e # Arrête le script en cas d'erreur
 
 # Nettoyer le répertoire dist
 echo "Nettoyage du dossier dist..."
 rm -rf dist
 mkdir dist
+
+#Generate projects.json
+echo "Generate projects.json..."
+node generatePortofolio.js
 
 # Copier index.html et les assets dans dist
 echo "Copie des fichiers principaux..."

@@ -10,21 +10,5 @@
   {
     "name": "34-fireworks-shaders",
     "image": "assets/34-fireworks-shaders.jpg"
-  },
-  {
-    "name": "35-lights-shading-shaders",
-    "image": "assets/35-lights-shading-shaders.jpg"
-  },
-  {
-    "name": "36-raging-sea-shading-shaders",
-    "image": "assets/36-raging-sea-shading-shaders.jpg"
-  },
-  {
-    "name": "37-halftone-shading-shaders",
-    "image": "assets/37-halftone-shading-shaders.jpg"
-  },
-  {
-    "name": "38-earth-shaders",
-    "image": "assets/38-earth-shaders.jpg"
   }
 ]
