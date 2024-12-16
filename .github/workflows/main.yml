@@ -17,16 +17,7 @@ jobs:
       run: npm install -g vercel
 
     - name: Build all projects
-      run: |
-        for dir in demo/*; do
-          if [ -d "$dir" ]; then
-            echo "Building $dir"
-            cd $dir
-            npm install
-            npm run build
-            cd ../../
-          fi
-        done
+      run: npm run build
 
     - name: Deploy to Vercel
       env:
