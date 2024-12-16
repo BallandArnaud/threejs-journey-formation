@@ -1,4 +1,4 @@
-name: Build and Deploy to Vercel
+name: Build and Deploy to GitHub Pages
 
 on:
   push:
@@ -6,20 +6,25 @@ on:
       - main
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Install dependencies globally
-      run: npm install -g vercel
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
-    - name: Build all projects
-      run: npm run build
+      - name: Install dependencies
+        run: npm install
 
-    - name: Deploy to Vercel
-      env:
-        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-      run: vercel --prod --yes
+      - name: Build all projects
+        run: npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+            folder: dist
