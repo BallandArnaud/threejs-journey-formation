@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Three.js Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Three.js Journey Projects</h1>
+        <div id="portfolio" class="gallery"></div>
+
+        <script>
+            async function loadProjects() {
+                const response = await fetch("projects.json");
+                const projects = await response.json();
+
+                const portfolio = document.getElementById("portfolio");
+
+                projects.forEach((project) => {
+                    const projectDiv = document.createElement("div");
+                    projectDiv.className = "project";
+
+                    const link = document.createElement("a");
+                    link.href = `./${project.name}`;
+
+                    const img = document.createElement("img");
+                    img.src = project.image;
+                    img.alt = project.name;
+
+                    const span = document.createElement("span");
+                    span.textContent = project.title;
+
+                    link.appendChild(img);
+                    link.appendChild(span);
+                    projectDiv.appendChild(link);
+                    portfolio.appendChild(projectDiv);
+                });
+            }
+
+            loadProjects();
+        </script>
+    </body>
+</html>

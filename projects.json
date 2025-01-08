@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Scroll Based Animation",
+    "name": "19-scroll-based-animation",
+    "image": "assets/19-scroll-based-animation.jpg"
+  },
+  {
+    "title": "Environment Map",
+    "name": "24-environment-map",
+    "image": "assets/24-environment-map.jpg"
+  },
+  {
+    "title": "Shader Patterns",
+    "name": "28-shader-patterns",
+    "image": "assets/28-shader-patterns.jpg"
+  },
+  {
+    "title": "Raging Sea",
+    "name": "29-raging-sea",
+    "image": "assets/29-raging-sea.jpg"
+  },
+  {
+    "title": "Animated Galaxy",
+    "name": "30-animated-galaxy",
+    "image": "assets/30-animated-galaxy.jpg"
+  },
+  {
+    "title": "Modified Materials",
+    "name": "31-modified-materials",
+    "image": "assets/31-modified-materials.jpg"
+  },
+  {
+    "title": "Coffee Smoke Shader",
+    "name": "32-coffee-smoke-shader",
+    "image": "assets/32-coffee-smoke-shader.jpg"
+  },
+  {
+    "title": "Hologram Shader",
+    "name": "33-hologram-shader",
+    "image": "assets/33-hologram-shader.jpg"
+  },
+  {
+    "title": "Lights Shading Shaders",
+    "name": "35-lights-shading-shaders",
+    "image": "assets/35-lights-shading-shaders.jpg"
+  },
+  {
+    "title": "Raging Sea Shading Shaders",
+    "name": "36-raging-sea-shading-shaders",
+    "image": "assets/36-raging-sea-shading-shaders.jpg"
+  },
+  {
+    "title": "Halftone Shading Shaders",
+    "name": "37-halftone-shading-shaders",
+    "image": "assets/37-halftone-shading-shaders.jpg"
+  },
+  {
+    "title": "Earth Shaders",
+    "name": "38-earth-shaders",
+    "image": "assets/38-earth-shaders.jpg"
+  },
+  {
+    "title": "Particles Morphing Shader",
+    "name": "40-particles-morphing-shader",
+    "image": "assets/40-particles-morphing-shader.jpg"
+  },
+  {
+    "title": "Mixing Html And Webgl",
+    "name": "48-mixing-html-and-webgl",
+    "image": "assets/48-mixing-html-and-webgl.jpg"
+  },
+  {
+    "title": "Adding Details To The Scene",
+    "name": "52-adding-details-to-the-scene",
+    "image": "assets/52-adding-details-to-the-scene.jpg"
+  },
+  {
+    "title": "Fun And Simple Portfolio With R3f",
+    "name": "64-fun-and-simple-portfolio-with-r3f",
+    "image": "assets/64-fun-and-simple-portfolio-with-r3f.jpg"
+  }
+]

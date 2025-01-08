@@ -1,0 +1,11 @@
+{
+    "name": "threejs-journey-formation",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "chmod +x build.sh && ./build.sh"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
