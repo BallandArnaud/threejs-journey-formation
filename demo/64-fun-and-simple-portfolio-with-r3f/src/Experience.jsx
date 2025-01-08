@@ -47,7 +47,7 @@ export default function Experience() {
                         </Html>
                     </primitive>
                     <Text
-                        font="/bangers-v20-latin-regular.woff"
+                        font="./bangers-v20-latin-regular.woff"
                         fontSize={1}
                         position={[2, 0.75, 0.75]}
                         rotation-y={-1.25}
